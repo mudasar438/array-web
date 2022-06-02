@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  :root {
+    --color-text-base: #ffffff;
+    --color-text-muted : #c7d2fe;
+    --color-text-inverted: #4f46e5;
+    --color-fill: #4338ca;
+    --color-button-accent: #ffffff;
+    --color-button-accent-hover: #eef2ff;
+    --color-button-muted: #6366f1;
+    --color-black:#020203;
+    --color-gray:#81A9D8
+    
+
+
+  }
+  .theme-swice{
+    --color-text-base: #ffffff;
+    --color-text-muted : #fecaca;
+    --color-text-inverted: #dc2626;
+    --color-fill: #b91c1c;
+    --color-button-accent: #ffffff;
+    --color-button-accent-hover: #fef2f2;
+    --color-button-muted: #ef4444;
+
+
+
+  }
+  .theme-neon{
+
+    --color-text-base: #111802;
+    --color-text-muted : #2f4306;
+    --color-text-inverted: #ebfacc;
+    --color-fill: #b3ff17;
+    --color-button-accent: #243403;
+    --color-button-accent-hover: #374f05;
+    --color-button-muted: #d4ff7a;
+  
+
+  }
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.nbtn{
+  background: rgba(71, 103, 251, 0.2);
+border: 1px solid rgba(71, 103, 251, 0.3);
+border-radius: 40px;
+}
+.nbtn1{
+  background: rgba(71, 103, 251, 0.1);
+border-radius: 38px;
+padding: 7px 13px;
+}
+.ndark{
+  background: linear-gradient(90deg, #FF3E3D 0%, #466DFD 100%);
+  border-radius: 40%;
+}
+.bgld{
+  background: rgba(71, 103, 251, 0.06);
+border: 1px solid rgba(71, 103, 251, 0.2);
+border-radius: 26px;
+}
+.nbtn2{
+  background: linear-gradient(90deg, #FF3E3D 0%, #466DFD 100%);
+border-radius: 38px;
+}
