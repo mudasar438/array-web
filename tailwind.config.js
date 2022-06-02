@@ -11,6 +11,7 @@ module.exports = {
           muted: 'var(--color-text-muted)',
           cgray: 'var(--color-text-muted)',
            inverted:'var( --color-gray)',
+           cardtext:'var(--color-cardtext)',
 
         },
 
@@ -19,9 +20,13 @@ module.exports = {
         skin:{
           fill:'var(--color-fill)',
           bblack:'var(--color-black)',
-          'button-accent':'var(--color-button-accent)',
-          'button-accent-hover':'var(-color-button-accent-hover)',
-          'button-muted':'var(--color-button-muted)',
+          rgbblue:'var(--color-rgbbtn)',
+          ffgray:'var(--color-footer)',
+          bgblack:'var(--color-homepage)',
+          bgcard:'var(--color-rgbabg)',
+          // 'button-accent':'var(--color-button-accent)',
+          // 'button-accent-hover':'var(-color-button-accent-hover)',
+          // 'button-muted':'var(--color-button-muted)',
 
         }
 

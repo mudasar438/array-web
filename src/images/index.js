@@ -1,1 +1,1 @@
-import { default as images } from './Images'
+import { default as Images } from './Images'

@@ -12,7 +12,12 @@
     --color-button-accent-hover: #eef2ff;
     --color-button-muted: #6366f1;
     --color-black:#020203;
-    --color-gray:#81A9D8
+    --color-gray:#81A9D8;
+    --color-footer:#150A21;
+    --color-homepage:#1E1E1E;
+    --color-cardtext:#466DFD;
+    --color-rgbabg:#020203cc;
+    /* --color-rgbbtn:linear-gradient(90deg, #FF3E3D 0%, #466DFD 100%); */
     
 
 
@@ -38,6 +43,7 @@
     --color-button-accent: #243403;
     --color-button-accent-hover: #374f05;
     --color-button-muted: #d4ff7a;
+   
   
 
   }
@@ -49,11 +55,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+
 }
 
 
@@ -79,4 +88,60 @@ border-radius: 26px;
 .nbtn2{
   background: linear-gradient(90deg, #FF3E3D 0%, #466DFD 100%);
 border-radius: 38px;
+}
+.ficon{
+  background: rgba(71, 103, 251, 0.1);
+border: 1px solid rgba(71, 103, 251, 0.2);
+border-radius: 5px;
+padding: 5px;
+margin: 2px;
+
+}
+.bgbtn {
+  background: linear-gradient(90deg, #FF3E3D 0%, #466DFD 100%);
+border: 1px solid rgba(71, 103, 251, 0.2);
+border-radius: 12px;
+}
+.progres{
+  background: rgba(71, 103, 251, 0.2);
+}
+.hometext{
+  background: linear-gradient(90deg, #FF3E3D 0%, #466DFD 100%);
+}
+.prog{
+  background: linear-gradient(90deg, #FF3E3D 0%, #466DFD 100%);
+  border-radius: 13px;
+}
+.bgimg1{
+  background-image: url('./images/baner1.svg');
+  background-position: 0% 95px;
+  background-repeat: no-repeat;
+  background-size: 100%
+
+
+}
+.bgimg2{
+  background-image: url('./images/p3.svg');
+  background-position: 0% ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  
+
+}
+.bgcard{
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 62, 61, 0.2) 0%, rgba(255, 62, 61, 0) 100%);
+  mix-blend-mode: screen;
+}
+.bgcard2{
+  background: rgba(71, 103, 251, 0.1);
+border-radius: 15px;
+}
+.bgcard3{
+  background: rgba(70, 109, 253, 0.05);
+border-radius: 15px;
+}
+.bgcard4{
+  background: linear-gradient(90deg, rgba(255, 62, 61, 0.1) 0%, rgba(70, 109, 253, 0.1) 100%);
+  border-radius: 15px;
 }
