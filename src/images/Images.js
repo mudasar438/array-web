@@ -27,8 +27,38 @@ import cards from './cardss.svg'
 import path1 from './path1.svg'
 import tik from './tik.svg'
 import token1 from './token1.svg'
+import Groupimg from './Groupimg.svg'
+import actor1 from './actor1.svg'
+import actor2 from './actor2.svg'
+import actor3 from './actor3.svg'
+import meet1 from './meet1.svg'
+import meet2 from './meet2.svg'
+import meet3 from './meet3.svg'
+import meet4 from './meet4.svg'
+import meet5 from './meet5.svg'
+import meet6 from './meet6.svg'
+import meet7 from './meet7.svg'
+import meet8 from './meet8.svg'
+import plus from './plus.svg';
+import ques from './ques.svg';
+
+
 const Images= {
+    actor1,
+    plus,
+    ques,
+    meet5,
+    meet8,
+    meet7,
+    meet6,
+    meet4,
+    meet3,
+    meet1,
+    meet2,
+    actor3,
+    actor2,
     logo1,
+    Groupimg,
     token1,
     path1,
     tik,

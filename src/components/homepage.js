@@ -1,6 +1,12 @@
 import React from 'react'
 import Images from '../images/Images'
 
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 const Homepage = () => {
   const array = [
     {
@@ -35,9 +41,51 @@ const Homepage = () => {
     },
   ]
 
-  const array2 = [ 1,2,3,4
-    
+  const array2 = [   {
+    img:Images.actor1,
+    title:'Mark Stanwyck',
+    auth:"Director",
+    des:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et vitae convallis imperdiet ultrices turpis. Molestie euismod tortor dignissim sed lacus sit quis. Eget dui tellus."
+  },
+  {
+  img:Images.actor2,
+  title:'Mark Stanwyck',
+  auth:"Director",
+  des:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et vitae convallis imperdiet ultrices turpis. Molestie euismod tortor dignissim sed lacus sit quis. Eget dui tellus."
+},
+{
+  img:Images.actor3,
+  title:'Mark Stanwyck',
+  auth:"Director",
+  des:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et vitae convallis imperdiet ultrices turpis. Molestie euismod tortor dignissim sed lacus sit quis. Eget dui tellus."
+},
       
+  ]
+  const array3 = [
+    {
+      img:Images.meet1
+    },
+    {
+      img:Images.meet2
+    },
+    {
+      img:Images.meet3
+    },
+    {
+      img:Images.meet4
+    },
+    {
+      img:Images.meet5
+    },
+    {
+      img:Images.meet6
+    },
+    {
+      img:Images.meet7
+    },
+    {
+      img:Images.meet8
+    },
   ]
   return (
   <>
@@ -298,8 +346,8 @@ const Homepage = () => {
         <h3 className='font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] '>Tokenomics</h3>
         <h3 className='text-3xl text-white py-3'>The Tokenomics</h3>
       </div>
-      <div className="w-[90%] mx-auto flex justify-between">
-        <div className="w-[40%] bgcard3 p-5">
+      <div className="w-[90%] mx-auto flex justify-between space-x-4">
+        <div className="w-[40%] bgcard3 p-5 border border-[#466efd3a]">
           <p className='text-white text-2xl text-center mb-8 font-bold '>Token Distribution</p>
           <div className="w-full ">
             <div className=" bgcard2 p-3 border  border-[#4768fb8c]">
@@ -418,7 +466,7 @@ const Homepage = () => {
             
           </div>
         </div>
-        <div className="w-[60%]    ">
+        <div className="w-[60%] bgcard3  border border-[#466efd3a] ">
           <p className='text-white text-2xl text-center my-8'>Vesting Schedule</p>
           <div className="w-[95%] mx-auto space-y-3">
           <div className="flex text-skin-cgray justify-center space-x-9 p-2 mt-3 bgcard4">
@@ -562,6 +610,253 @@ const Homepage = () => {
       </div>
 
     </div>
+    <div className=" my-12">
+    <div className="w-[25%] mx-auto text-center mb-12">
+        <h3 className='font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] '>Model</h3>
+        <h3 className='text-3xl text-white py-3'>Financial Model</h3>
+      </div>
+      <div className="w-[90%] mx-auto  mb-12">
+        <img src={Images.Groupimg} alt="" />
+      </div>
+
+    </div>
+    <div className="mt-12 w-[90%] mx-auto ">
+    <div className="w-[25%] mx-auto text-center mb-12 ">
+        <h3 className='font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] '>Meet with our</h3>
+        <h3 className='text-3xl text-white py-3'>Creative Team</h3>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-6">
+      {array2.map((item)=>{
+        return(
+          <div className="  border border-[#466efd3a]  relative  text-center bgcard2 my-[150px]  ">
+        <div className="  absolute -top-[130px]  left-[70px]">
+          <img src={item.img} alt="actor" width={247} height={247}  />
+        </div>
+        <div className="mt-24 pt-12">
+          <p className='text-white text-2xl p-3'>Mark Stanwyck</p>
+          <p className='text-skin-cgray p-2'>Director</p>
+        </div>
+        <div className="text-skin-cgray p-3 text-sm">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et vitae convallis imperdiet ultrices turpis. Molestie euismod tortor dignissim sed lacus sit quis. Eget dui tellus.
+        
+        </div>
+        <div className=" ">
+        <div className="flex p-5 justify-center">
+               <img src={Images.twiter} alt="l1" className='ficon '/>
+               <img src={Images.git} alt="l2" className='ficon'/>
+             
+               <img src={Images.discod} alt="l4" className='ficon' />
+             
+               
+           </div>
+        </div>
+
+      </div>
+
+        )
+      })
+
+      }
+      
+      
+      
+      </div>
+
+    </div>
+    <div className=" bg-[#30273d3f] p-10 rounded-lg">
+    <div className="w-[25%] mx-auto text-center mb-12 ">
+        <h3 className='font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] '>Partnerships</h3>
+        <h3 className='text-3xl text-white py-3'>Meet our Partner</h3>
+      </div>
+      <div className="w-[90%] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6">
+          {array3.map((item)=>{
+            return(
+              <div className="flex items-center  border border-[#466efd3a]">
+            <img src={item.img} alt="" srcset="" className='mx-auto' />
+            </div>
+
+            )
+          })}
+            
+
+        </div>
+      </div>
+    </div>
+    <div className="my-12">
+    <div className="w-[25%] mx-auto text-center mb-12 ">
+        <h3 className='font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] '>FAQ’s</h3>
+        <h3 className='text-3xl text-white py-3'>Frequently asked Questions</h3>
+      </div>
+      <div className="">
+      <div className='space-y-2'>
+        <div className="">
+      <Accordion sx={{ borderRadius: '10px'}}>
+        <AccordionSummary className='bg-red-400'
+        sx={{
+          backgroundColor:"#0c101f",
+        }}
+          expandIcon={<img src={Images.plus} />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography className='flex items-center text-white '>
+          <img src={Images.ques} alt=""  className='pr-5'/>
+         What are Minted Fingers?
+            </Typography>
+        </AccordionSummary>
+        <AccordionDetails sx={{
+          backgroundColor:"#0c101f",border:'1px solid #23346e', 
+        }}>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      </div>
+      <div className="">
+      <Accordion sx={{ borderRadius: '10px'}}>
+        <AccordionSummary className='bg-red-400'
+        sx={{
+          backgroundColor:"#0c101f",
+        }}
+          expandIcon={<img src={Images.plus} />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography className='flex items-center text-white '>
+          <img src={Images.ques} alt=""  className='pr-5'/>
+         What are Minted Fingers?
+            </Typography>
+        </AccordionSummary>
+        <AccordionDetails sx={{
+          backgroundColor:"#0c101f",border:'1px solid #23346e', 
+        }}>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      </div>
+      <div className="">
+      <Accordion sx={{ borderRadius: '10px'}}>
+        <AccordionSummary className='bg-red-400'
+        sx={{
+          backgroundColor:"#0c101f",
+        }}
+          expandIcon={<img src={Images.plus} />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography className='flex items-center text-white '>
+          <img src={Images.ques} alt=""  className='pr-5'/>
+         What are Minted Fingers?
+            </Typography>
+        </AccordionSummary>
+        <AccordionDetails sx={{
+          backgroundColor:"#0c101f",border:'1px solid #23346e', 
+        }}>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      </div>
+      <div className="">
+      <Accordion sx={{ borderRadius: '10px'}}>
+        <AccordionSummary className='bg-red-400'
+        sx={{
+          backgroundColor:"#0c101f",
+        }}
+          expandIcon={<img src={Images.plus} />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography className='flex items-center text-white '>
+          <img src={Images.ques} alt=""  className='pr-5'/>
+         What are Minted Fingers?
+            </Typography>
+        </AccordionSummary>
+        <AccordionDetails sx={{
+          backgroundColor:"#0c101f",border:'1px solid #23346e', 
+        }}>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      </div>
+      <div className="">
+      <Accordion sx={{ borderRadius: '10px'}}>
+        <AccordionSummary className='bg-red-400'
+        sx={{
+          backgroundColor:"#0c101f",
+        }}
+          expandIcon={<img src={Images.plus} />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography className='flex items-center text-white '>
+          <img src={Images.ques} alt=""  className='pr-5'/>
+         What are Minted Fingers?
+            </Typography>
+        </AccordionSummary>
+        <AccordionDetails sx={{
+          backgroundColor:"#0c101f",border:'1px solid #23346e', 
+        }}>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      </div>
+     
+     
+    
+    
+       
+      <Accordion disabled>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3a-content"
+          id="panel3a-header"
+        >
+          <Typography>Disabled Accordion</Typography>
+        </AccordionSummary>
+      </Accordion>
+    </div>
+
+      </div>
+    </div>
+    <div className="">
+    <div className="w-[25%] mx-auto text-center mb-12 ">
+        <h3 className='font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] '>Newsletter</h3>
+        <h3 className='text-3xl text-white py-3'>Let’s Get in Touch</h3>
+      </div>
+      <div className="w-[70%] mx-auto">
+        <div className="flex justify-between ">
+        <input type="email" placeholder=' Email' className='p-2 m-3 w-[48%]  bg-[#3b1a6d3f] h-[70px] rounded-xl'/>
+        <input type="email" placeholder=' Telegram handle' className='p-2 m-3 w-[48%]  bg-[#3b1a6d3f] h-[70px] rounded-xl'/>
+        </div>
+        <div className="">
+          <textarea name="" id="" cols="30" rows="10" className='p-4 text-skin-cgray m-3 w-[98%] bg-[#3b1a6d3f] h-[70px] rounded-xl'>
+           write your Message
+          </textarea>
+        </div>
+        <div className="">
+        <button className='text-white bg-skin-rgbblue p-5 bgbtn w-full'>send Message</button>
+        </div>
+
+
+      </div>
+    </div>
+
+
 
   </div>
   </>

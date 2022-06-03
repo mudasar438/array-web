@@ -3,7 +3,7 @@ import React from 'react'
 const Lounchpad = () => {
   return (
     <>
-    <div className="">Lounchpad</div>
+    <div className="bg-[#23346e]">Lounchpad</div>
     </>
   )
 }
