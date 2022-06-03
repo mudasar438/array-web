@@ -91,20 +91,20 @@ const Homepage = () => {
   <>
   <div className="max-w-screen-2xl mx-auto">
     <div className="w-full bgimg1 h-[813px] ">
-      <div className="w-[60%] mx-auto pt-12">
+      <div className=" w-[80%] md:w-[60%] mx-auto pt-12">
 
-            <p className='font-bold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] text-center'>Launchpad & DeFi hub of the Avalanche
+            <p className='font-bold text-transparent text-xl md:text-4xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] text-left md:text-center'>Launchpad & DeFi hub of the Avalanche
                     Ecosystem.</p>
              <p className='text-white text-sm text-center mt-8'>The DeFi hub on AVALANCHE ecosystem to bootstrap innovations, monitor and manage digital assets.</p>
-             <div className="flex  justify-between mt-12 ">
-               <div className="flex border-2 bg-skin-bgcard p-3 rounded-xl w-[48%] justify-between items-center ">
+             <div className="flex w-full  space-y-3 md:space-y-0 flex-col md:flex-row justify-between mt-12 ">
+               <div className="flex border-2 md:border-none bg-skin-bgcard p-3 rounded-xl w-full md:w-[48%] justify-between items-center ">
                  <div className="">
 
                  <img src={Images.p1} alt="" width={71} height={71}/>
                  </div>
                  <div className="">
-                   <p className='text-white text-2xl font-bold'>Dex</p>
-                   <p className='text-skin-cardtext text-lg'>Go to PAD.FI’s DEX</p>
+                   <p className='text-white text-lg md:text-2xl font-bold'>Dex</p>
+                   <p className='text-skin-cardtext text-sm md:text-lg'>Go to PAD.FI’s DEX</p>
                                           
                  </div>
                  <div className="">
@@ -113,14 +113,14 @@ const Homepage = () => {
 
 
                </div>
-               <div className="flex border-2 bg-skin-bgcard p-3 rounded-xl w-[48%] justify-between items-center ">
+               <div className="flex border-2 md:border-none  bg-skin-bgcard p-3 rounded-xl w-full md:w-[48%] justify-between items-center ">
                  <div className="">
 
                  <img src={Images.p2} alt="" width={71} height={71}/>
                  </div>
                  <div className="">
-                   <p className='text-white text-2xl font-bold'>Dex</p>
-                   <p className='text-skin-cardtext text-lg'>Go to PAD.FI’s DEX</p>
+                   <p className='text-white text-lg md:text-2xl font-bold'>Dex</p>
+                   <p className='text-skin-cardtext text-sm md:text-lg'>Go to PAD.FI’s DEX</p>
                                           
                  </div>
                  <div className="">
@@ -137,8 +137,8 @@ const Homepage = () => {
     </div>
           {/* next dive start */}
 
-    <div className="w-full mx-auto flex justify-between  p-12">
-      <div className="w-[45%]">
+    <div className="w-full mx-auto flex flex-col md:flex-row justify-between md:mt-0  mt-[-270px] md:p-12">
+      <div className=" w-full p-5 text-center md:text-left md:w-[45%]">
         <h1 className='font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] py-3'>Bootstrap your innovations</h1>
         <p className='text-skin-cgray '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, accumsan  viverra. Tellus est nunc, donec arcu. Neque, nunc ultricies justo, mi viverra nulla risus. Arcu malesuada sed aenean nullam ac turpis. A aliquam a ultricies luctus et nisi. </p><br />
 
@@ -146,7 +146,7 @@ const Homepage = () => {
 
 
       </div>
-      <div className="w-[38%] bgimg2 p-3 flex items-center">
+      <div className="w-[80%] mx-auto rounded-xl md:w-[33%] bgimg2 p-3 flex items-center ">
        <img src={Images.puss} alt="" width={81} height={81} className="mx-auto "/>
   
      
@@ -154,9 +154,9 @@ const Homepage = () => {
 
     </div>
     <div className="w-full mx-auto p-12">
-      <div className="w-[40%] mx-auto text-center space-y-3">
+      <div className="w-full md:w-[40%] mx-auto text-center space-y-3">
         <p className='font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] text-center '>PAD.FI PRODUCTS</p>
-        <h2 className='text-white text-2xl'>Everything you need in one place</h2>
+        <h2 className='text-white text-xl md:text-2xl'>Everything you need in one place</h2>
         <p className='text-skin-cgray'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at at libero tincidunt arcu tellus. Nunc, orci cursus blandit.</p>
 
       </div>
@@ -187,12 +187,12 @@ const Homepage = () => {
       </div>
     </div>
     <div className="w-full mx-auto p-12">
-      <div className="w-[25%] mx-auto text-center mb-12">
+      <div className=" w-full md:w-[25%] mx-auto text-center mb-12">
         <h3 className='font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] '>The Rodemap</h3>
-        <h3 className='text-3xl text-white py-3'>Our Rodemap</h3>
+        <h3 className='text-2xl md:text-3xl text-white py-3'>Our Rodemap</h3>
       </div>
-      <div className="w-full flex justify-between">
-        <div className="w-[22%] flex flex-col items-center">
+      <div className="w-full flex flex-col md:flex-row justify-between space-y-10 md:space-y-0">
+        <div className="w-full md:w-[22%] flex flex-col items-center">
           <img src={Images.path1} alt="" />
           <ul className='space-y-3 bgcard2 p-3 mt-12 w-full'>
             <li>
@@ -225,7 +225,7 @@ const Homepage = () => {
             </li>
           </ul>
         </div>
-        <div className="w-[22%] flex flex-col items-center">
+        <div className= "w-full md:w-[22%] flex flex-col items-center">
           <img src={Images.path1} alt="" />
           <ul className='space-y-3 bgcard2 p-3 mt-12 w-full'>
             <li>
@@ -279,7 +279,7 @@ const Homepage = () => {
             </li>
           </ul>
         </div>
-        <div className="w-[22%] flex flex-col items-center">
+        <div className="w-full md:w-[22%] flex flex-col items-center">
           <img src={Images.path1} alt="" />
           <ul className='space-y-3 bgcard2 p-3 mt-12 w-full'>
             <li>
@@ -312,7 +312,7 @@ const Homepage = () => {
             </li>
           </ul>
         </div>
-        <div className="w-[22%] flex flex-col items-center">
+        <div className="w-full md:w-[22%] flex flex-col items-center">
           <img src={Images.path1} alt="" />
           <ul className='space-y-3 bgcard2 p-3 mt-12 w-full'>
             <li>
@@ -342,16 +342,16 @@ const Homepage = () => {
       </div>
     </div>
     <div className="w-full">
-    <div className="w-[25%] mx-auto text-center mb-12">
+    <div className="w-full md:w-[25%] mx-auto text-center mb-12">
         <h3 className='font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] '>Tokenomics</h3>
-        <h3 className='text-3xl text-white py-3'>The Tokenomics</h3>
+        <h3 className='text-2xl md:text-3xl text-white py-3'>The Tokenomics</h3>
       </div>
-      <div className="w-[90%] mx-auto flex justify-between space-x-4">
-        <div className="w-[40%] bgcard3 p-5 border border-[#466efd3a]">
+      <div className="w-[90%] mx-auto flex flex-col md:flex-row justify-between space-x-4 space-y-10 md:space-y-0">
+        <div className="w-full md:w-[40%] bgcard3 p-5 border border-[#466efd3a] space-y-2">
           <p className='text-white text-2xl text-center mb-8 font-bold '>Token Distribution</p>
           <div className="w-full ">
-            <div className=" bgcard2 p-3 border  border-[#4768fb8c]">
-              <div className="flex justify-between">
+            <div className=" bgcard2 p-3 border border-[#4768fb8c]">
+              <div className="flex justify-between  ">
 
             <p className='text-skin-cgray'>Staking Rewards</p>
             <p className='text-white text-2xl font-bold'>30 m</p>
@@ -466,7 +466,7 @@ const Homepage = () => {
             
           </div>
         </div>
-        <div className="w-[60%] bgcard3  border border-[#466efd3a] ">
+        <div className="w-full md:w-[60%] bgcard3  border border-[#466efd3a] space-y-3 ">
           <p className='text-white text-2xl text-center my-8'>Vesting Schedule</p>
           <div className="w-[95%] mx-auto space-y-3">
           <div className="flex text-skin-cgray justify-center space-x-9 p-2 mt-3 bgcard4">
@@ -474,7 +474,7 @@ const Homepage = () => {
             <p>Vesting Schedule</p>
             
           </div>
-          <div className="flex text-skin-cgray justify-center items-center space-x-9  mt-3 bgcard2  border-2 border-[#466efd15]">
+          <div className="flex  text-skin-cgray justify-center items-center space-x-9  mt-3 bgcard2  border-2 border-[#466efd15]">
             <div className="w-[30%]  ">
 
             <p className='bg-[#466efd15] p-5 rounded-xl '>Team Advisors</p>
@@ -611,9 +611,9 @@ const Homepage = () => {
 
     </div>
     <div className=" my-12">
-    <div className="w-[25%] mx-auto text-center mb-12">
+    <div className="w-full md:w-[25%] mx-auto text-center mb-12">
         <h3 className='font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] '>Model</h3>
-        <h3 className='text-3xl text-white py-3'>Financial Model</h3>
+        <h3 className='text-2xl md:text-3xl text-white py-3'>Financial Model</h3>
       </div>
       <div className="w-[90%] mx-auto  mb-12">
         <img src={Images.Groupimg} alt="" />
@@ -621,15 +621,15 @@ const Homepage = () => {
 
     </div>
     <div className="mt-12 w-[90%] mx-auto ">
-    <div className="w-[25%] mx-auto text-center mb-12 ">
+    <div className="w-full md:w-[25%] mx-auto text-center mb-12 ">
         <h3 className='font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] '>Meet with our</h3>
         <h3 className='text-3xl text-white py-3'>Creative Team</h3>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-8 md:gap-6">
       {array2.map((item)=>{
         return(
           <div className="  border border-[#466efd3a]  relative  text-center bgcard2 my-[150px]  ">
-        <div className="  absolute -top-[130px]  left-[70px]">
+        <div className="  absolute -top-[130px] left-[50px] md:left-[70px]">
           <img src={item.img} alt="actor" width={247} height={247}  />
         </div>
         <div className="mt-24 pt-12">
@@ -664,9 +664,9 @@ const Homepage = () => {
 
     </div>
     <div className=" bg-[#30273d3f] p-10 rounded-lg">
-    <div className="w-[25%] mx-auto text-center mb-12 ">
+    <div className="w-full md:w-[25%] mx-auto text-center mb-12 ">
         <h3 className='font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] '>Partnerships</h3>
-        <h3 className='text-3xl text-white py-3'>Meet our Partner</h3>
+        <h3 className='text-2xl md:text-3xl text-white py-3'>Meet our Partner</h3>
       </div>
       <div className="w-[90%] mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6">
@@ -684,12 +684,12 @@ const Homepage = () => {
       </div>
     </div>
     <div className="my-12">
-    <div className="w-[25%] mx-auto text-center mb-12 ">
+    <div className="w-full md:w-[25%] mx-auto text-center mb-12 ">
         <h3 className='font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] '>FAQ’s</h3>
-        <h3 className='text-3xl text-white py-3'>Frequently asked Questions</h3>
+        <h3 className='text-2xl md:text-3xl text-white py-3'>Frequently asked Questions</h3>
       </div>
       <div className="">
-      <div className='space-y-2'>
+      <div className='space-y-2 '>
         <div className="">
       <Accordion sx={{ borderRadius: '10px'}}>
         <AccordionSummary className='bg-red-400'
@@ -706,9 +706,9 @@ const Homepage = () => {
             </Typography>
         </AccordionSummary>
         <AccordionDetails sx={{
-          backgroundColor:"#0c101f",border:'1px solid #23346e', 
+          backgroundColor:"#0c101f",border:'1px solid #23346e' , 
         }}>
-          <Typography>
+          <Typography className='text-skin-cgray'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </Typography>
@@ -733,7 +733,7 @@ const Homepage = () => {
         <AccordionDetails sx={{
           backgroundColor:"#0c101f",border:'1px solid #23346e', 
         }}>
-          <Typography>
+          <Typography  className='text-skin-cgray'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </Typography>
@@ -758,7 +758,7 @@ const Homepage = () => {
         <AccordionDetails sx={{
           backgroundColor:"#0c101f",border:'1px solid #23346e', 
         }}>
-          <Typography>
+          <Typography  className='text-skin-cgray'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </Typography>
@@ -783,7 +783,7 @@ const Homepage = () => {
         <AccordionDetails sx={{
           backgroundColor:"#0c101f",border:'1px solid #23346e', 
         }}>
-          <Typography>
+          <Typography  className='text-skin-cgray'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </Typography>
@@ -808,7 +808,7 @@ const Homepage = () => {
         <AccordionDetails sx={{
           backgroundColor:"#0c101f",border:'1px solid #23346e', 
         }}>
-          <Typography>
+          <Typography  className='text-skin-cgray'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </Typography>
@@ -834,11 +834,11 @@ const Homepage = () => {
       </div>
     </div>
     <div className="">
-    <div className="w-[25%] mx-auto text-center mb-12 ">
+    <div className="w-full md:w-[25%] mx-auto text-center mb-12 ">
         <h3 className='font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] '>Newsletter</h3>
-        <h3 className='text-3xl text-white py-3'>Let’s Get in Touch</h3>
+        <h3 className='text-2xl md:text-3xl text-white py-3'>Let’s Get in Touch</h3>
       </div>
-      <div className="w-[70%] mx-auto">
+      <div className="w-full md:w-[70%] mx-auto">
         <div className="flex justify-between ">
         <input type="email" placeholder=' Email' className='p-2 m-3 w-[48%]  bg-[#3b1a6d3f] h-[70px] rounded-xl'/>
         <input type="email" placeholder=' Telegram handle' className='p-2 m-3 w-[48%]  bg-[#3b1a6d3f] h-[70px] rounded-xl'/>
@@ -849,7 +849,7 @@ const Homepage = () => {
           </textarea>
         </div>
         <div className="">
-        <button className='text-white bg-skin-rgbblue p-5 bgbtn w-full'>send Message</button>
+        <button className='text-white bg-skin-rgbblue p-5 bgbtn w-full '>send Message</button>
         </div>
 
 
