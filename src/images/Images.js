@@ -41,10 +41,26 @@ import meet7 from './meet7.svg'
 import meet8 from './meet8.svg'
 import plus from './plus.svg';
 import ques from './ques.svg';
+import lonchpad from './lonchpad.svg';
+import rectangular from './rectangular.svg';
+import nft from './nft.svg';
+import solid from './solid.svg';
+import clock from './clock.svg';
+import vector from './vector.svg';
+import rec1 from './rec1.svg';
+
+
 
 
 const Images= {
+    nft,
+    rec1,
+    vector,
+    clock,
+    solid,
+    rectangular,
     actor1,
+    lonchpad,
     plus,
     ques,
     meet5,

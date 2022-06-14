@@ -683,7 +683,7 @@ const Homepage = () => {
         </div>
       </div>
     </div>
-    <div className="my-12">
+    <div className="my-12 p-5">
     <div className="w-full md:w-[25%] mx-auto text-center mb-12 ">
         <h3 className='font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#FF3E3D] to-[#466DFD] '>FAQ’s</h3>
         <h3 className='text-2xl md:text-3xl text-white py-3'>Frequently asked Questions</h3>

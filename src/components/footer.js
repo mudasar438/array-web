@@ -13,7 +13,7 @@ const Footer = () => {
                <img src={Images.Array} alt="" />
            </div>
            <p className='text-skin-cgray text-sm py-3'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus architecto, perspiciatis error esse unde officia earum asperiores </p>
-           <div className="flex mt-8 mx-auto border-2 justify-center ">
+           <div className="flex mt-8 mx-auto justify-center ">
                <img src={Images.twiter} alt="l1" className='ficon '/>
                <img src={Images.git} alt="l2" className='ficon'/>
                <img src={Images.arroup} alt="l3"className='ficon' />
@@ -23,7 +23,7 @@ const Footer = () => {
            </div>
 
           </div>
-          <div className="flex space-x-11 w-full mt-10 :mt-0 md:w-[30%]   ">
+          <div className="flex space-x-11 w-full mt-10-- :mt-0 md:w-[30%]   ">
               <div className="w-[80%] flex mx-auto space-x-10">
               <div className="">
               <h1 className='text-white mb-5 text-sm'>Site Links</h1>
