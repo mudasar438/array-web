@@ -48,12 +48,24 @@ import solid from './solid.svg';
 import clock from './clock.svg';
 import vector from './vector.svg';
 import rec1 from './rec1.svg';
+import rec2 from './rec2.svg';
+import rec3 from './rec3.svg';
+import rec4 from './rec4.svg';
+import rec5 from './rec5.svg';
+import rec6 from './rec6.png';
+import group1 from './group1.svg';
 
 
 
 
 const Images= {
     nft,
+    rec2,
+    rec3,
+    rec4,
+    rec5,
+    rec6,
+    group1,
     rec1,
     vector,
     clock,

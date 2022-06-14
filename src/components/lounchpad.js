@@ -6,11 +6,11 @@ const Lounchpads = () => {
   return (
     <>
     <div className='max-w-screen-2xl mx-auto'>
-      <div className="w-full p-12  flex items-center">
-        <div className="w-[50%]">
+      <div className="w-full p-12  flex flex-col md:flex-row items-center">
+        <div className="md:w-[50%]">
           <img src={Images.lonchpad} alt="" />
         </div>
-        <div className="text-white w-[45%]">
+        <div className="text-white text-center  md:text-left md:w-[45%]">
           <span className='font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-[#d34c4c] to-[#466DFD]'>Launchpad</span>
           <p className='text-3xl font-bold'>Why you should choose Launchpad</p>
           <div className=" space-y-6 mt-5 text-skin-cgray">
@@ -22,16 +22,18 @@ const Lounchpads = () => {
         </div>
       </div>
       <div className="w-full text-white ">
-        <div className="w-[25%] mx-auto  text-center">
+        <div className=" w-full md:w-[25%] mx-auto my-10  text-center">
         <span className='font-bold text-transparent text-lg bg-clip-text bg-gradient-to-r from-[#d34c4c] to-[#466DFD]'>Ongoing Sale</span>
       <p className='text-2xl mt-3'>Live Auction</p>
         </div>
-        <div className="w-[70%] border-2 border-blue-900 mx-auto flex bg-[#375ada36] rounded-xl p-2">
-          <div className="w-[40%]">
+
+
+        <div className="w-[95%] mx-auto md:w-[70%]  border-2 border-blue-900  flex flex-col md:flex-row bg-[#375ada36] rounded-xl p-2">
+          <div className=" md:w-[40%]">
             <img src={Images.rectangular} alt="" srcset="" />
           </div>
-          <div className="w-[70%] ">
-            <div className="w-[90%] mx-auto flex justify-between p-3 border-b-2 border-[#2c4bbd4f]">
+          <div className="w-full md:w-[70%] mx-auto ">
+            <div className="w-[90%] flex flex-col md:flex-row justify-between p-3 border-b-2 border-[#2c4bbd4f]">
               <div className="flex space-x-3">
 
              
@@ -41,11 +43,11 @@ const Lounchpads = () => {
                 <p>1 SLIME = 0.019 AVAX</p>
                 </div>
                 </div>
-                <button className='flex border-2 mt-3 border-red-400 items-center space-x-3 px-2 rounded-full h-8 text-red-500 bg-[#fb474725]'>
+                <button className='flex w-full justify-center md:w-[25%] border-2 mt-3 border-red-400 items-center space-x-3 px-2 rounded-full h-8 text-red-500 bg-[#fb474725]'>
                                               
                                               
                   <img src={Images.solid} alt="" />
-                  <p>Sold out</p>
+                  <p className='text-center'>Sold out</p>
                 </button>
           
             </div>
@@ -99,11 +101,11 @@ const Lounchpads = () => {
         
       </div>
       <div className="my-12 text-white">
-      <div className="w-[25%] mx-auto  text-center">
+      <div className=" md:w-[25%] mx-auto my-10 text-center">
         <span className='font-bold text-transparent text-lg bg-clip-text bg-gradient-to-r from-[#d34c4c] to-[#466DFD]'>Upcoming Sale</span>
       <p className='text-2xl mt-3 text-white'>Upcoming Sale</p>
         </div>
-        <div className="">
+        <div className="w-[90%] mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-8 md:gap-6">
           <div className="bgcard2 p-2">
             <div className="text-center bg-[#405abb4d] rounded-lg ">
@@ -118,13 +120,327 @@ const Lounchpads = () => {
                <p>Total Raised</p>
                <p>$1,232,300 / $1,232,300</p>
               </div>
-              <button className=' text-xl text-red-500 border-2 border-red-400 rounded-3xl h-9 px-2 bg-[#fb474725]'>upcoming</button>
+              <button className=' text-xl text-center text-red-500 border-2 border-red-400 rounded-3xl h-9 px-2 bg-[#fb474725]'>upcoming</button>
 
+            </div>
+            <div className="  p-3   ">
+              <div className="flex justify-between">
+
+            <p className='text-skin-cgray'>Current Sale</p>
+            <p className='text-blue-500 text-2xl font-bold'>52%</p>
+              </div>
+                <div className="w-full h-4  rounded-full  progres">
+                  <div className=" h-4 rounded-r-full bg-gradient-to-r from-[#FF3E3D] to-[#466DFD]" style={{width: "72%"}}></div>
+                      </div>   
+            </div>
+            <div className="">
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>1200</p>
+              </div>
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>$0.004</p>
+              </div>
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>05.03.2022</p>
+              </div>
+              
+              
+            </div>
+           
+          </div>
+          <div className="bgcard2 p-2">
+            <div className="text-center bg-[#405abb4d] rounded-lg ">
+
+           <p className='text-skin-cgray p-2'>Starts in</p>
+           <span className='font-bold p-2 text-transparent text-lg bg-clip-text bg-gradient-to-r from-[#d34c4c] to-[#466DFD]'>2D : 18H : 30M UTC</span>
+            </div>
+
+            <img src={Images.rec2} alt="" className='my-2' />
+            <div className="flex justify-between items-center">
+              <div className="">
+               <p>Total Raised</p>
+               <p>$1,232,300 / $1,232,300</p>
+              </div>
+              <button className=' text-xl text-center text-red-500 border-2 border-red-400 rounded-3xl h-9 px-2 bg-[#fb474725]'>upcoming</button>
+
+            </div>
+            <div className="  p-3   ">
+              <div className="flex justify-between">
+
+            <p className='text-skin-cgray'>Current Sale</p>
+            <p className='text-blue-500 text-2xl font-bold'>52%</p>
+              </div>
+                <div className="w-full h-4  rounded-full  progres">
+                  <div className=" h-4 rounded-r-full bg-gradient-to-r from-[#FF3E3D] to-[#466DFD]" style={{width: "72%"}}></div>
+                      </div>   
+            </div>
+            <div className="">
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>1200</p>
+              </div>
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>$0.004</p>
+              </div>
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>05.03.2022</p>
+              </div>
+              
+              
+            </div>
+           
+          </div>
+          <div className="bgcard2 p-2">
+            <div className="text-center bg-[#405abb4d] rounded-lg ">
+
+           <p className='text-skin-cgray p-2'>Starts in</p>
+           <span className='font-bold p-2 text-transparent text-lg bg-clip-text bg-gradient-to-r from-[#d34c4c] to-[#466DFD]'>2D : 18H : 30M UTC</span>
+            </div>
+
+            <img src={Images.rec3} alt="" className='my-2' />
+            <div className="flex justify-between items-center">
+              <div className="">
+               <p>Total Raised</p>
+               <p>$1,232,300 / $1,232,300</p>
+              </div>
+              <button className=' text-xl text-center text-red-500 border-2 border-red-400 rounded-3xl h-9 px-2 bg-[#fb474725]'>upcoming</button>
+
+            </div>
+            <div className="  p-3   ">
+              <div className="flex justify-between">
+
+            <p className='text-skin-cgray'>Current Sale</p>
+            <p className='text-blue-500 text-2xl font-bold'>52%</p>
+              </div>
+                <div className="w-full h-4  rounded-full  progres">
+                  <div className=" h-4 rounded-r-full bg-gradient-to-r from-[#FF3E3D] to-[#466DFD]" style={{width: "72%"}}></div>
+                      </div>   
+            </div>
+            <div className="">
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>1200</p>
+              </div>
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>$0.004</p>
+              </div>
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>05.03.2022</p>
+              </div>
+              
+              
             </div>
            
           </div>
           <div className="">
           </div>
+         
+          
+           </div>
+        </div>
+      </div>
+      <div className="">
+      <div className="md:w-[25%] mx-auto my-10  text-center">
+        <span className='font-bold text-transparent text-lg bg-clip-text bg-gradient-to-r from-[#d34c4c] to-[#466DFD]'>Completed sale</span>
+      <p className='text-3xl mt-3 text-white'>completed Sale</p>
+        </div>
+        <div className="w-[90%] mx-auto text-white">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-8 md:gap-6">
+          <div className="bgcard2 p-2">
+            <div className="text-center bg-[#405abb4d] rounded-lg ">
+
+           <p className='text-skin-cgray p-2'>Starts in</p>
+           <span className='font-bold p-2 text-transparent text-lg bg-clip-text bg-gradient-to-r from-[#d34c4c] to-[#466DFD]'>2D : 18H : 30M UTC</span>
+            </div>
+
+            <img src={Images.rec4} alt="" className='my-2' />
+            <div className="flex justify-between items-center">
+              <div className="">
+               <p>Total Raised</p>
+               <p>$1,232,300 / $1,232,300</p>
+              </div>
+              <button className=' text-xl text-center text-red-500 border-2 border-red-400 rounded-3xl h-9 px-2 bg-[#fb474725]'>Completed</button>
+
+            </div>
+            <div className="  p-3   ">
+              <div className="flex justify-between">
+
+            <p className='text-skin-cgray'>Current Sale</p>
+            <p className='text-blue-500 text-2xl font-bold'>52%</p>
+              </div>
+                <div className="w-full h-4  rounded-full  progres">
+                  <div className=" h-4 rounded-r-full bg-gradient-to-r from-[#FF3E3D] to-[#466DFD]" style={{width: "72%"}}></div>
+                      </div>   
+            </div>
+            <div className="">
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>1200</p>
+              </div>
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>$0.004</p>
+              </div>
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>05.03.2022</p>
+              </div>
+              
+              
+            </div>
+           
+          </div>
+          <div className="bgcard2 p-2">
+            <div className="text-center bg-[#405abb4d] rounded-lg ">
+
+           <p className='text-skin-cgray p-2'>Starts in</p>
+           <span className='font-bold p-2 text-transparent text-lg bg-clip-text bg-gradient-to-r from-[#d34c4c] to-[#466DFD]'>2D : 18H : 30M UTC</span>
+            </div>
+
+            <img src={Images.rec5} alt="" className='my-2' />
+            <div className="flex justify-between items-center">
+              <div className="">
+               <p>Total Raised</p>
+               <p>$1,232,300 / $1,232,300</p>
+              </div>
+              <button className=' text-xl text-center text-red-500 border-2 border-red-400 rounded-3xl h-9 px-2 bg-[#fb474725]'>Completed</button>
+
+            </div>
+            <div className="  p-3   ">
+              <div className="flex justify-between">
+
+            <p className='text-skin-cgray'>Current Sale</p>
+            <p className='text-blue-500 text-2xl font-bold'>52%</p>
+              </div>
+                <div className="w-full h-4  rounded-full  progres">
+                  <div className=" h-4 rounded-r-full bg-gradient-to-r from-[#FF3E3D] to-[#466DFD]" style={{width: "72%"}}></div>
+                      </div>   
+            </div>
+            <div className="">
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>1200</p>
+              </div>
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>$0.004</p>
+              </div>
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>05.03.2022</p>
+              </div>
+              
+              
+            </div>
+           
+          </div>
+          <div className="bgcard2 p-2">
+            <div className="text-center bg-[#405abb4d] rounded-lg ">
+
+           <p className='text-skin-cgray p-2'>Starts in</p>
+           <span className='font-bold p-2 text-transparent text-lg bg-clip-text bg-gradient-to-r from-[#d34c4c] to-[#466DFD]'>2D : 18H : 30M UTC</span>
+            </div>
+
+            <img src={Images.rec6} alt="" className='my-2' />
+            <div className="flex justify-between items-center">
+              <div className="">
+               <p>Total Raised</p>
+               <p>$1,232,300 / $1,232,300</p>
+              </div>
+              <button className=' text-xl text-center text-red-500 border-2 border-red-400 rounded-3xl h-9 px-2 bg-[#fb474725]'>Completed</button>
+
+            </div>
+            <div className="  p-3   ">
+              <div className="flex justify-between">
+
+            <p className='text-skin-cgray'>Current Sale</p>
+            <p className='text-blue-500 text-2xl font-bold'>52%</p>
+              </div>
+                <div className="w-full h-4  rounded-full  progres">
+                  <div className=" h-4 rounded-r-full bg-gradient-to-r from-[#FF3E3D] to-[#466DFD]" style={{width: "72%"}}></div>
+                      </div>   
+            </div>
+            <div className="">
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>1200</p>
+              </div>
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>$0.004</p>
+              </div>
+              <div className="flex justify-between items-center p-2 bgcard2 my-1">
+                <div className="flex items-center ">
+                  <img src={Images.group1} alt="" />
+                  <p className='text-skin-cgray ml-2'>Participants</p>
+                </div>
+                <p className='text-xl font-bold'>05.03.2022</p>
+              </div>
+              
+              
+            </div>
+            
+           
+          </div>
+         
          
           
            </div>
