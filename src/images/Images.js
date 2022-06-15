@@ -54,13 +54,27 @@ import rec4 from './rec4.svg';
 import rec5 from './rec5.svg';
 import rec6 from './rec6.png';
 import group1 from './group1.svg';
+import blockchain1 from './blockchain1.svg';
+import h1 from './h1.svg';
+import h2 from './h2.svg';
+import h3 from './h3.svg';
+import h4 from './h4.svg';
+import tikk from './tikk.svg';
+
+
 
 
 
 
 const Images= {
+    blockchain1,
     nft,
+    h2,
+    h4,
+    h3,
+    tikk,
     rec2,
+    h1,
     rec3,
     rec4,
     rec5,
