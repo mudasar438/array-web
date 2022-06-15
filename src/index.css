@@ -170,3 +170,10 @@ mix-blend-mode: screen;
   background: radial-gradient(50% 50% at 50% 50%, rgba(70, 109, 253, 0.2) 0%, rgba(70, 109, 253, 0) 100%);
 mix-blend-mode: screen;
 }
+.bgchart{
+  background: linear-gradient(90deg, rgba(255, 62, 61, 0.4) 0%, rgba(132, 43, 61, 0) 100%);
+}
+.bgtable{
+  background: linear-gradient(90deg, #FF3E3D 0%, #466DFD 100%);
+opacity: 0.15;
+}

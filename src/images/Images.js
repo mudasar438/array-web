@@ -60,14 +60,24 @@ import h2 from './h2.svg';
 import h3 from './h3.svg';
 import h4 from './h4.svg';
 import tikk from './tikk.svg';
-
-
-
-
-
-
+import line1 from './line1.svg';
+import line2 from './line2.svg';
+import line3 from './line3.svg';
+import line4 from './line4.svg';
+import chart from './chart.svg';
+import chart1 from './chart1.svg';
+import xline from './xline.svg';
+import tp1 from './tp1.svg';
 const Images= {
     blockchain1,
+    xline,
+    tp1,
+    chart,
+    chart1,
+    line3,
+    line1,
+    line4,
+    line2,
     nft,
     h2,
     h4,
