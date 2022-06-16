@@ -68,8 +68,31 @@ import chart from './chart.svg';
 import chart1 from './chart1.svg';
 import xline from './xline.svg';
 import tp1 from './tp1.svg';
+import setting from './setting.svg';
+import def from './def.svg';
+import b from './b.svg';
+import av from './av.svg';
+import eth from './eth.svg'
+import coin from './coin.svg';
+import user1 from './user1.svg'
+import time from './time.svg';
+import coin2 from './coin2.svg';
+import coin3 from './coin3.svg';
+import lode from './lode.svg';
+
 const Images= {
     blockchain1,
+    lode,
+    time,
+    user1,
+    coin,
+    coin2,
+    coin3,
+    b,
+    eth,
+    av,
+    setting,
+    def,
     xline,
     tp1,
     chart,

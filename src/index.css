@@ -97,6 +97,9 @@ padding: 5px;
 margin: 2px;
 
 }
+.borderl-g{
+  background: linear-gradient(90deg, #FF3E3D 0%, #466DFD 100%);
+}
 .bgbtn {
   background: linear-gradient(90deg, #FF3E3D 0%, #466DFD 100%);
 border: 1px solid rgba(71, 103, 251, 0.2);

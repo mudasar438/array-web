@@ -51,7 +51,7 @@ const Footer = () => {
               </div>
             
           </div>
-          <div className=" w-[30%] ">
+          <div className=" md:w-[30%] ">
               <div className="items-center px-5">
               <h1 className='text-white text-2xl p-2  '>Never miss a sale!</h1>
               <p className='text-skin-cgray text-sm p-1 ml-2'>subscribe for the lates news aridrops $ sale</p>
@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
           </div>
       </div>
-      <div className="text-center text-sm">
+      <div className=" w-[full]text-center text-sm">
           <p className='text-skin-cgray p-3 bg-skin-ffgray'>
 
                  Array © Copyright 2022. All Rights Reserved.

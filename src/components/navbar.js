@@ -36,11 +36,11 @@ const Navbar = () => {
             </div>
           </div>
           <div className="w-full mt-5 md:mt-0 md:w-[30%] text-white flex md:items-center ml-2">
-            <ul className="flex w-full  md:flex-row mx-2 items-center justify-between ">
+            <ul className="flex flex-col w-full  md:flex-row md:mx-2 items-center justify-between ">
               
               <Navlinks title="DEX" href = '/dex'/>
               <Navlinks title="Lounchpad" href='/lounchpad'/>
-              <Navlinks title="State" href='/stack'/>
+              <Navlinks title="Stack" href='/stack'/>
               <Navlinks title="Status" href= '/state'/>
             
               
