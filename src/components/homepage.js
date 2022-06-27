@@ -119,7 +119,7 @@ const Homepage = () => {
                  <img src={Images.p2} alt="" width={71} height={71}/>
                  </div>
                  <div className="">
-                   <p className='text-white text-lg md:text-2xl font-bold'>Dex</p>
+                   <p className='text-white text-lg md:text-2xl font-bold'>Launchpad</p>
                    <p className='text-skin-cardtext text-sm md:text-lg'>Go to PAD.FI’s DEX</p>
                                           
                  </div>
